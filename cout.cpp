@@ -4,5 +4,9 @@ int main(){
     std::cout << "Number 1"  << std::endl;
     std::cout << "Number 2" << std::endl;
 
+    for (int i = 3;i<=10;i++){
+        std::cout << "Hello" << std::endl;
+    }
+
     return 0;
 }
