@@ -14,6 +14,7 @@ int main(){
     std::cout << add_numbers(2,5) << std::endl;
     std::cout << add_numbers(21,54) << std::endl;
     std::cout << add_numbers(62,45) << std::endl;
+    std::cout << add_numbers(-124,45) << std::endl;
 
     return 0;
 }
