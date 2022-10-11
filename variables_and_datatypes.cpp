@@ -1,3 +1,0 @@
-/*
-int float bool double float char void auto
-*/
