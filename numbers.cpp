@@ -2,6 +2,8 @@
 using namespace std;
 
 int main(){
+    // integers take 4 bytes
+    //
     int n1 = 15; //decimal
     int n2 = 017; //octal
     int n3 = 0xEF14; //hexadecimal
