@@ -7,5 +7,9 @@ int main(){
     double a = 0.9;
     double b = 0.0;
     cout << a/b << endl;
+    float c {0.123123412341234f};
+    long double d {0.1324134124123412L};
+    cout << c << " " << sizeof(c) << endl;
+    cout << d << " " << sizeof(d) << endl;
 
 }
