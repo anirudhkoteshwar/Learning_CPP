@@ -7,8 +7,10 @@ int main(){
     signed int y = -264;
     signed z = -2048;
     signed long a = -124124341123;
+    long long b ;
     cout << n << " " << x << " " << y << endl;
     cout << sizeof(n) << " " << sizeof(x) << " " << sizeof(y) << endl;
     cout << z << " " << sizeof(z) << endl;
     cout << a << " " << sizeof(z) << endl;
+    cout << b << " " << sizeof(b) << endl;
 }
