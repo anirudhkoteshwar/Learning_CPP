@@ -10,4 +10,8 @@ using namespace std;
     cout << n2 << endl;
     cout << n3 << endl;
     cout << n4 << endl;
+    cout << typeid(n1).name() << endl; //print type of the variable
+    cout << typeid(n2).name() << endl;
+    cout << typeid(n3).name() << endl;
+    cout << typeid(n4).name() << endl;
  }
