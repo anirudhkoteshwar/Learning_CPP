@@ -58,6 +58,38 @@ int main(){
     cout << noshowbase;
     cout << endl;
 
+    //std::fixed centers the display at the decimal point
+    int b1 = 123;
+    double b2 = 314;
+    double b3 = 213e-12;
+    cout << fixed;
+    cout << b1 << endl;
+    cout << b2 << endl;
+    cout << b3 << endl;
+    //std::scientific displays the number in scientific notation
+    cout << scientific;
+    cout<< b1 <<endl;
+    cout << b2 << endl;
+    cout << b3 << endl;
+    cout.unsetf(std::ios::scientific | std::ios::fixed); //unset scientific and fixed notation
+    cout << endl;
+
+    //std::setprecision sets number of digits in output
+    double c1 = 123.13413413135135135;
+    cout << setprecision(5);
+    cout << c1 << endl;
+    cout << endl;
+
+    //std::showpoint shows decimal point even if the decimal part is zero
+    //std::noshowpoint does the opposite
+    double c2 = 12.0;
+    cout << showpoint << c2 << endl;
+    cout << noshowpoint << c2 << endl;
+    cout << endl;
+
+    //std::uppercase shows characters in uppercase
+    //std::nouppercase does the opposite
+    
 
 
 
