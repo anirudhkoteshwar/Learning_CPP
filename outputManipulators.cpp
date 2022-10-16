@@ -34,8 +34,17 @@ int main(){
     bool b = 0;
     cout << boolalpha;
     cout << a << "   "  << b << endl;
+    cout << endl;
     //std::showpos shows + for positive numbers
     //std::noshowpos resets this
+    cout << showpos;
+    cout << 5 << endl;
+    cout << -3 << endl;
+    cout << noshowpos;
+    cout << endl;
+    //std::
+
+
 
     
 }
