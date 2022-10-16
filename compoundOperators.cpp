@@ -17,5 +17,8 @@ int main(){
     x=10;
     x%=5;
     cout << "value of x%=5 is : " << x << endl;
+    /*
+    cout << x+=5 << endl; doesnt work
+    */
 
 }
