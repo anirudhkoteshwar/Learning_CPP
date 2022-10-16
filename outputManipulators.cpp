@@ -46,12 +46,16 @@ int main(){
     //std::dec is decimal
     //std:hex is hexadecimal
     //std::oct is octal
+    //std::showbase shows the base as 0x and 0
+    //std::noshowbase resets it
     int a1 = 12412;
     int a2 = -12412;
     float a3 = 134.123;
+    cout << showbase;
     cout << "dec, hex and oct for unsigned int : " << dec << a1 << ' ' << hex << a1 << ' ' << oct << a1 << endl;
     cout << "dec, hex and oct for signed int : " << dec << a2 << ' ' << hex << a2 << ' ' << oct << a2 << endl;
     cout << "dec, hex and oct for float : " << dec << a3 << ' ' << hex << a3 << ' ' << oct << a3 << endl;
+    cout << noshowbase;
     cout << endl;
 
 
