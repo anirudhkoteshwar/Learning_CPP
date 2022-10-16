@@ -27,7 +27,15 @@ int main(){
     cout << setw(10) << "Augustus"  << setw(10) << "Gloop" << setw(5) << "73" << endl;
     cout << setw(10) << "Kiki"  << setw(10) << "Kaka" << setw(5) << "91" << endl;
     cout << setw(10) << "Capy"  << setw(10) << "Bara" << setw(5) << "93" << endl;
-
+    cout << endl;
+    //std::boolalpha shows boolean output 0,1 as false and true
+    //std::noboolalpha resets this
+    bool a = 1;
+    bool b = 0;
+    cout << boolalpha;
+    cout << a << "   "  << b << endl;
+    //std::showpos shows + for positive numbers
+    //std::noshowpos resets this
 
     
 }
