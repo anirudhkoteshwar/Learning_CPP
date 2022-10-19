@@ -19,5 +19,10 @@ int main(){
     int a = 5;
     int b = 6;
     int c = (a==b) ? 10 : 20;
-    cout << c << endl;
+    cout << c << endl; 
+
+    //ternary initialization
+    bool fast = true;
+    int speed = fast ? 30 : 40;
+    cout << speed << endl;
 }
