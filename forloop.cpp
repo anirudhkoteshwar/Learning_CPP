@@ -10,7 +10,7 @@ int main(){
         -increment/decrement
         -body
     */
-   for (size_t i{}; i < 11;++i){
+   for (size_t i{1}; i < 11;++i){
     cout << "Hello " << i << endl;
    }
    cout << "Size of size_t is : "<<sizeof(size_t) << " Bytes" << endl;
