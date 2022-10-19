@@ -13,6 +13,7 @@ int main(){
     //cases must be constant values
     //break statement is necessary cuz when a successful case is hit, everything after that will also execute
     //condition must be of integral type
+    //multiple conditions can be grouped
     switch(a){
         case b: {
             cout << "a = b" << endl;
@@ -33,7 +34,7 @@ int main(){
 
         default:{
             cout << "none" << endl;
-        }
+        }break;
     }
 
 }
