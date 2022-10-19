@@ -10,7 +10,9 @@ int main(){
         -increment/decrement
         -body
     */
-   for (int i=0; i < 11;++i){
+   for (size_t i{}; i < 11;++i){
     cout << "Hello " << i << endl;
    }
+    //we can use size_t as an alias for unsigned int, and it is used commonly for iterators
+    //size_t i; and size_t i{}; are not the same. the second one sets i to 0
 }
