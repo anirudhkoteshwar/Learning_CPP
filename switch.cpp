@@ -8,7 +8,8 @@ int main(){
     const int d = 10;
 
     //cases must be constant values
-    
+    //break statement is necessary cuz when a successful case is hit, everything after that will also execute
+    //condition must be of integral type
     switch(a){
         case b: {
             cout << "a = b" << endl;
