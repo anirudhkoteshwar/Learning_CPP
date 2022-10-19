@@ -7,6 +7,8 @@ int main(){
     const int c = 30;
     const int d = 10;
 
+    //cases must be constant values
+    
     switch(a){
         case b: {
             cout << "a = b" << endl;
