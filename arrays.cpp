@@ -29,9 +29,22 @@ int main(){
         cout << "money[" << i << "]" << "=" << money[i] << endl; 
     }
 
-    for (auto value: sizes){
+    for (auto value: sizes){ 
+        cout << "value:" << value << endl;
+    }
+       for (int value: sizes){
         cout << "value:" << value << endl;
     }
     //you can omit the size of the array while initializing it.
     //this last one might be the most useful.
+
+    //use std::size() to get the size of an array
+    cout << size(sizes) << endl;
+
+    //character arrays are also an option
+    char message[] {'a','b','c','d','e','f','g','\0'};
+    for (auto character : message){
+        cout << character;
+    }   
+    cout << endl;
 }
