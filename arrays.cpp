@@ -47,4 +47,8 @@ int main(){
         cout << character;
     }   
     cout << endl;
+
+    //string literals
+    char message1[] {"Hello"}; //size will be 6 as c++ will add null terminator \0
+    cout << message1 << endl;
 }
