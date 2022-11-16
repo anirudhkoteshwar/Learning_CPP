@@ -39,8 +39,8 @@ int main(){
     //this last one might be the most useful.
 
     //use std::size() to get the size of an array
-    cout << size(sizes) << endl;
-
+    cout << size(sizes) << endl; //std does have size idk why this is highlighted as an error
+    cout << sizeof(sizes) << endl; //7 elements of 4 bytes = 28
     //character arrays are also an option
     char message[] {'a','b','c','d','e','f','g','\0'};
     for (auto character : message){
