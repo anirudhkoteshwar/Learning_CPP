@@ -7,5 +7,5 @@ int main(){
     int a = 10;
     p = &a; //store address of integer a in pointer p
     cout << p <<endl; //address of p
-    cout << *p << endl; //value stored at p
+    cout << *p << endl; //value stored at address p
 }
