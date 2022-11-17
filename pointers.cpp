@@ -8,4 +8,5 @@ int main(){
     p = &a; //store address of integer a in pointer p
     cout << p <<endl; //address of p
     cout << *p << endl; //value stored at address p
+    cout << sizeof(p) <<endl; //size of each pointer is same
 }
