@@ -9,4 +9,12 @@ int main(){
     cout << p <<endl; //address of p
     cout << *p << endl; //value stored at address p
     cout << sizeof(p) <<endl; //size of each pointer is same
+
+    //character pointer
+    char *c {};
+    char cvar = 'A';
+    c = &cvar;
+    cout << c << endl;
+    cout << *c << endl;
+
 }
