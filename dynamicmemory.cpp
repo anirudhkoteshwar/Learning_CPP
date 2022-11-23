@@ -46,4 +46,6 @@ int main(){
     delete a;
     cout << *b << endl;
     */
+
+   //new fails when the heap is full
 }
