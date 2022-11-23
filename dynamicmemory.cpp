@@ -6,6 +6,9 @@ int main(){
     {int a = 10;}
     //cout << a <<endl; //a is not declared in this scope
 
+    //DO NOT INITIALIZE POINTER WITH NULL VALUE
+    //int *a {}; DO NOT DO THIS
+    
     //you can also use heap memory to store data
     int *p {nullptr};
     p = new int; //dynamically allocate space for a single int on the heap. the system wont interfere with this memory.
