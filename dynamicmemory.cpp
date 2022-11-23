@@ -24,4 +24,26 @@ int main(){
     cout << *p << endl;
     delete p;
     p = nullptr;
+
+    //dangling pointers
+    //case 1: uninitialized pointer
+    /*
+    int *a;
+    and the a = &b statement is missing.
+    */
+
+    //case 2: deleted pointer
+    /*
+    int *a {new int{66}};
+    delete a;
+    cout << a << endl; //do not do this
+    */
+
+    //case 3: multiple pointers pointing at same data
+    /*
+    int *a {new int{12}};
+    int *b {a};
+    delete a;
+    cout << *b << endl;
+    */
 }
