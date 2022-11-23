@@ -8,14 +8,20 @@ int main(){
 
     //DO NOT INITIALIZE POINTER WITH NULL VALUE
     //int *a {}; DO NOT DO THIS
-    
+
     //you can also use heap memory to store data
     int *p {nullptr};
     p = new int; //dynamically allocate space for a single int on the heap. the system wont interfere with this memory.
     *p = 77;
     cout << *p << endl;
-    //to release this memory,
+    //to release this memory back to the OS,
     delete p;
     p = nullptr;
     //DO NOT CALL DELETE ON A POINTER TWICE.
+
+    //this pointer still exists
+    p = new int(81);
+    cout << *p << endl;
+    delete p;
+    p = nullptr;
 }
