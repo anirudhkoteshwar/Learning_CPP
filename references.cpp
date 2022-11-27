@@ -4,11 +4,13 @@ using namespace std;
 int main(){
     int var1 {10};
     double var2 {10.45};
+    int var3 {30};
 
     //setting references to varaibles
     int& ref_var1 {var1}; //initialization
     int& ref_var1_2 = var1; //assignment
     double& ref_var2 {var2};
+    const int& ref_var3 {var3}; //constant reference;cannot be modified
 
     cout << "first variable is " << var1 << " and the reference variable is " << ref_var1 << endl;
     cout << "first variable address is " << &var1 << " and the reference variable address is " << &ref_var1 << endl;
