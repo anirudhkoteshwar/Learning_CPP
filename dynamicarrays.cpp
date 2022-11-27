@@ -24,6 +24,8 @@ int main(){
 
     delete[] p_scores;
     p_scores = nullptr;
-    
+
+    //range based for loops and std::size doesnt work here
+
     return 0;
 }
