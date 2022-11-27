@@ -32,6 +32,16 @@ int main(){
         cout << test << " is not an alphabet character" << endl;
     }
 
+    //check if a character is a number
+    //works only for single digit numbers
+    char num {'9'};
+    if (isdigit(num)){
+        cout << num << " is a number character" << endl;
+    }
+    else {
+        cout << num << " is not a number character" << endl;
+    }
+
     //check if a character is a blank
     char message[] {"Hello this is a test message."};
     int blank_count {0};
@@ -42,6 +52,15 @@ int main(){
         }
     }
     cout << "Found " << blank_count << " blanks in total." << endl;
+
+    //check if character is lowercase or uppercase
+    cout << islower('c') << endl;
+    cout << islower('C') << endl;
+    cout << isupper('C') << endl;
+    cout << isupper('c') << endl;
+
+
+
 
     return 0;
 }
