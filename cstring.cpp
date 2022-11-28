@@ -58,5 +58,18 @@ int main(){
     strcat(dest," Goodbye world");
     cout << dest << endl;
 
+    //specify how many characters you want to concatonate
+    //str'n'cat  not strcat
+    cout << strncat(dest,src,3) << endl;
 
+    //copy strings
+    const char* src1 {"C++ is a programming language."};
+    char* dest1 {new char[strlen(src1)+1]}; //strlen doesnt include null char so we need to add 1
+    strcpy(dest1,src1);
+    cout << sizeof(dest1) << "|" << strlen(dest1) << "|" << dest1 << endl;
+
+    //copy specified number of characters with strncpy
+    //strncpy(destination,source,n)
+
+    
 }
