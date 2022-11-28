@@ -32,19 +32,24 @@ int main(){
     size_t n {3};
     cout << "comparing strdata5 with strdata6 : " << strncmp(strdata5,strdata6,n) << endl;
 
-    //string search
+    //string search first occurance
     const char* str_1 {"Try not. Do, or do not. There is no try."};
     char target {'t'};
     const char* result = str_1;
     int iterations{};
     while ((result=strchr(result,target))!=nullptr){
         cout << "Found " << target << " starting at " << result << endl;
-        ++result;
+        ++result; //need to increment result pointer, otherwise itll give the same result always.
         ++iterations;
     }   
     cout << "Iterations : " << iterations << endl;
 
-
+    //string search last occurance
+    char input[] {"/home/user/hello.cpp"};
+    char* output = strrchr(input, '/');
+    if (output){
+        cout << output+1 << endl; //+1 because we want the part that comes after the last occurance of that character.
+    }
 
 
 }
