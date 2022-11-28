@@ -32,5 +32,19 @@ int main(){
     size_t n {3};
     cout << "comparing strdata5 with strdata6 : " << strncmp(strdata5,strdata6,n) << endl;
 
+    //string search
+    const char* str_1 {"Try not. Do, or do not. There is no try."};
+    char target {'t'};
+    const char* result = str_1;
+    int iterations{};
+    while ((result=strchr(result,target))!=nullptr){
+        cout << "Found " << target << " starting at " << result << endl;
+        ++result;
+        ++iterations;
+    }   
+    cout << "Iterations : " << iterations << endl;
+
+
+
 
 }
