@@ -25,5 +25,12 @@ int main(){
     const char* strdata4 {"alabama"};
     cout << "comparing strdata3 with strdata4 : " << strcmp(strdata3,strdata4) << endl;
 
+    //strncmp takes number of characters to compare as an argument
+    //str'n'cmp not strcmp
+    const char* strdata5 {"aaabcdefg"};
+    const char* strdata6 {"aaazzzxyw"};
+    size_t n {3};
+    cout << "comparing strdata5 with strdata6 : " << strncmp(strdata5,strdata6,n) << endl;
+
 
 }
