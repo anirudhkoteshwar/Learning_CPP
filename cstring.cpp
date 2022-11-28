@@ -48,8 +48,15 @@ int main(){
     char input[] {"/home/user/hello.cpp"};
     char* output = strrchr(input, '/');
     if (output){
-        cout << output+1 << endl; //+1 because we want the part that comes after the last occurance of that character.
+        cout << output+1 << endl; //+1 because we want the part that comes after the last occurance of that character.2
     }
+
+    //join strings
+    char dest[50] {"Hello, "};
+    char src[50] {"world!"};
+    strcat(dest,src);
+    strcat(dest," Goodbye world");
+    cout << dest << endl;
 
 
 }
