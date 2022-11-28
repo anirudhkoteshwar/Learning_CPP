@@ -59,8 +59,22 @@ int main(){
     cout << isupper('C') << endl;
     cout << isupper('c') << endl;
 
+    //convert lowercase to uppercase and vice versa
+    char og_str[] {"Hello this is the Original String."};
+    char dest_str[size(og_str)];
 
+    for (int i{};i < size(og_str);++i){
+        dest_str[i] = toupper(og_str[i]);
+    }
+    cout << "Original string : " << og_str << endl;
+    cout << "Uppercase string : " << dest_str << endl;
 
+    for (int i{};i < size(og_str);++i){
+        dest_str[i] = tolower(og_str[i]);
+    }
+
+    cout << "Original string : " << og_str << endl;
+    cout << "Lowercase string : " << dest_str << endl;
 
     return 0;
 }
