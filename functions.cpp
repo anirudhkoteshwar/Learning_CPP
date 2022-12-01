@@ -21,5 +21,10 @@ void enter_bar(unsigned int age){
 int main(){
     enter_bar(22);
     enter_bar(12);
+    int i{1};
+    while (i<101){
+        enter_bar(i);
+        ++i;
+    }
 }
 
