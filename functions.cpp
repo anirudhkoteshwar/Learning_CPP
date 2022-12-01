@@ -18,13 +18,19 @@ void enter_bar(unsigned int age){
     }
 }
 
+int max(int a,int b){
+    int greater = a>b ? a : b;
+    return greater;
+}
+
 int main(){
     enter_bar(22);
     enter_bar(12);
-    int i{1};
-    while (i<101){
-        enter_bar(i);
-        ++i;
-    }
+    cout << "enter two numbers" << endl;
+    int a;
+    int b;
+    cin >> a;
+    cin >> b;
+    cout << "The larger number is " << max(a,b) << endl;
 }
 
