@@ -23,6 +23,13 @@ int max(int a,int b){
     return greater;
 }
 
+void maniarg(int a){
+    cout << "address of argument : " << &a << endl;
+    cout << "Incrementing argument..." << endl;
+    a++;
+    cout << "value of argument : " << a << endl;
+}
+
 int main(){
     enter_bar(22);
     enter_bar(12);
@@ -32,5 +39,8 @@ int main(){
     cin >> a;
     cin >> b;
     cout << "The larger number is " << max(a,b) << endl;
+    cout << "Address of variable : " << &a << endl;
+    maniarg(a);
+    cout << "value of variable : " << a << endl;
 }
 
