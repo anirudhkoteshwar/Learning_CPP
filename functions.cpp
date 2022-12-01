@@ -8,6 +8,24 @@ using namespace std;
         return returntype
     }
 */
+void enter_bar(unsigned int age);
+int max(int a,int b);
+void maniarg(int a);
+
+
+int main(){
+    enter_bar(22);
+    enter_bar(12);
+    cout << "enter two numbers" << endl;
+    int a;
+    int b;
+    cin >> a;
+    cin >> b;
+    cout << "The larger number is " << max(a,b) << endl;
+    cout << "Address of variable : " << &a << endl;
+    maniarg(a);
+    cout << "value of variable : " << a << endl;
+}
 
 void enter_bar(unsigned int age){
     if (age>=18){
@@ -29,18 +47,3 @@ void maniarg(int a){
     a++;
     cout << "value of argument : " << a << endl;
 }
-
-int main(){
-    enter_bar(22);
-    enter_bar(12);
-    cout << "enter two numbers" << endl;
-    int a;
-    int b;
-    cin >> a;
-    cin >> b;
-    cout << "The larger number is " << max(a,b) << endl;
-    cout << "Address of variable : " << &a << endl;
-    maniarg(a);
-    cout << "value of variable : " << a << endl;
-}
-
