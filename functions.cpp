@@ -64,7 +64,6 @@ void enter_bar(unsigned int age){
     }
 }
 
-
 int max(int a,int b){
     return a>b ? a : b;
 }
