@@ -8,11 +8,12 @@ using namespace std;
         return returntype
     }
 */
-void enter_bar(unsigned int );
+void enter_bar(unsigned int);
 int max(int,int);
 void maniarg(int);
 void incrint(int*);
 void refint(int&);
+void sum(int&,int&,int&);
 
 int main(){
     enter_bar(22);
@@ -42,6 +43,16 @@ int main(){
     refint(c);
     cout << c << " " << &c << endl;
 
+    //getting output from functions
+    //a return isnt really needed actuall
+    int d = 10;
+    int e = 20;
+    int f;
+    int& x = d;
+    int& y = e;
+    int& z = f;
+    sum(x,y,z);
+    cout << z << endl;
 }
 
 void enter_bar(unsigned int age){
@@ -71,8 +82,13 @@ void incrint(int* a){
     cout << "value of a is " << *a << endl;
 }
 
-void refint(int& a){
+void refint(int& a){   
     cout << "value of a is " << a  << " " << &a << endl;
     ++a;
     cout << "value of a is " << a << endl;
 }
+
+void sum(int& a,int& b,int& c){
+    c = a+b;
+}
+
