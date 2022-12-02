@@ -34,8 +34,23 @@ int main(){
    cout << [](int a, int b){ return a+b; }(22,34) << endl;
 
    //specify return type. It will be forced to return double.
-   auto result1 = [](double a, double b)->double{
+   /* auto result1 = [](double a, double b)->double{
     return (a+b);
    }(12.3,45.4);
-   cout << result1 << endl;
+   cout << result1 << endl; */
+
+   //capture lists: bring stuff outside the scope of the lambda function into the lambda function
+   // captured elements are converted into copies and the copies are modified. 
+   // further modifications made to the original variable do not affect the value captured by the lambda function
+   int c = 30;
+   auto func1 = [c](){
+    cout << "Inner value : " << c << endl;
+   };
+
+   for (int i=0;i<10;++i){
+    func1();
+    cout << "Outer value : " << c++ << endl; 
+   }
+
+
 }
