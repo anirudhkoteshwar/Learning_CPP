@@ -11,7 +11,7 @@ using namespace std;
 void enter_bar(unsigned int );
 int max(int,int);
 void maniarg(int);
-
+void incrint(int*);
 
 int main(){
     enter_bar(22);
@@ -21,10 +21,15 @@ int main(){
     int b;
     cin >> a;
     cin >> b;
+    //arguments passed will be converted to copies
     cout << "The larger number is " << max(a,b) << endl;
     cout << "Address of variable : " << &a << endl;
     maniarg(a);
     cout << "value of variable : " << a << endl;
+    //to avoid this, we can pass arguments as pointers
+    cout << b << " " << &b << endl;
+    incrint(&b);
+    cout << b << " " << &b << endl;
 }
 
 void enter_bar(unsigned int age){
@@ -46,4 +51,10 @@ void maniarg(int a){
     cout << "Incrementing argument..." << endl;
     a++;
     cout << "value of argument : " << a << endl;
+}
+
+void incrint(int* a){
+    cout << "value of a is " << *a  << " " << a << endl;
+    ++(*a);
+    cout << "value of a is " << *a << endl;
 }
