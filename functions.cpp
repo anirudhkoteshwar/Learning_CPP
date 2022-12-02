@@ -12,6 +12,7 @@ void enter_bar(unsigned int );
 int max(int,int);
 void maniarg(int);
 void incrint(int*);
+void refint(int&);
 
 int main(){
     enter_bar(22);
@@ -21,15 +22,26 @@ int main(){
     int b;
     cin >> a;
     cin >> b;
+
+    //pass by value
     //arguments passed will be converted to copies
     cout << "The larger number is " << max(a,b) << endl;
     cout << "Address of variable : " << &a << endl;
     maniarg(a);
     cout << "value of variable : " << a << endl;
+
     //to avoid this, we can pass arguments as pointers
+    //pass by pointer
     cout << b << " " << &b << endl;
     incrint(&b);
     cout << b << " " << &b << endl;
+
+    //pass by reference
+    int& c = b;
+    cout << c << " " << &c << endl;
+    refint(c);
+    cout << c << " " << &c << endl;
+
 }
 
 void enter_bar(unsigned int age){
@@ -57,4 +69,10 @@ void incrint(int* a){
     cout << "value of a is " << *a  << " " << a << endl;
     ++(*a);
     cout << "value of a is " << *a << endl;
+}
+
+void refint(int& a){
+    cout << "value of a is " << a  << " " << &a << endl;
+    ++a;
+    cout << "value of a is " << a << endl;
 }
