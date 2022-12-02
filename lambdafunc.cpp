@@ -29,4 +29,7 @@ int main(){
     return a*b;
    }(10.5,35.2);
    cout << "result : " << result << endl;
+
+   //print result directly
+   cout << [](int a, int b){ return a+b; }(22,34) << endl;
 }
