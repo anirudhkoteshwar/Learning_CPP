@@ -32,4 +32,10 @@ int main(){
 
    //print result directly
    cout << [](int a, int b){ return a+b; }(22,34) << endl;
+
+   //specify return type. It will be forced to return double.
+   auto result1 = [](double a, double b)->double{
+    return (a+b);
+   }(12.3,45.4);
+   cout << result1 << endl;
 }
