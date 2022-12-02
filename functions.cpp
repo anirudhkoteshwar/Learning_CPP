@@ -8,9 +8,9 @@ using namespace std;
         return returntype
     }
 */
-void enter_bar(unsigned int age);
-int max(int a,int b);
-void maniarg(int a);
+void enter_bar(unsigned int );
+int max(int,int);
+void maniarg(int);
 
 
 int main(){
@@ -36,9 +36,9 @@ void enter_bar(unsigned int age){
     }
 }
 
+
 int max(int a,int b){
-    int greater = a>b ? a : b;
-    return greater;
+    return a>b ? a : b;
 }
 
 void maniarg(int a){
