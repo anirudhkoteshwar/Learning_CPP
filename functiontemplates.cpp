@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string.h>
 using namespace std;
 
 template <typename T> T maximum(T a, T b);
@@ -10,10 +11,14 @@ int main(){
     int b {20};
     double c {22.3};
     double d {302.34};
+    string e {"Hello"};
+    string f {"World"};
     cout << maximum(a,b) << endl;
     cout << maximum(c,d) << endl;
+    cout << maximum(e,f) << endl;
 }
 
+// T is the placeholder for the type
 template <typename T> T maximum(T a, T b){
     return (a>b) ? a:b;
 }
