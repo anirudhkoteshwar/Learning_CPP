@@ -52,6 +52,28 @@ int main(){
     cout << "Outer value : " << c++ << endl; 
    }
    func1();
+    
+    //to capture everything by outside the lambda function by value, use = in the []
+    int a = 1;
+    int b = 2;
+    auto func2 = [=](){
+        cout << a << '\n' << b << '\n' << c << endl;
+    };
+    func2();
 
+    //to capture everything outside the lambda function by reference, use & in []
+    //this means modifications made to the varaibles later on are also captured by the lambda function
+    int d = 42;
+    int e = 69;
+
+    auto func3 = [&](){
+        cout << d << '\n' << e <<  endl;
+    };
+    for (int i{};i<5;++i){
+        cout << " Outer values : " << d << " " << e << endl;
+        func3();
+        ++d;
+        e+=3;
+    }
 
 }
