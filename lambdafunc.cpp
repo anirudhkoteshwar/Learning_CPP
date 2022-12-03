@@ -42,15 +42,16 @@ int main(){
    //capture lists: bring stuff outside the scope of the lambda function into the lambda function
    // captured elements are converted into copies and the copies are modified. 
    // further modifications made to the original variable do not affect the value captured by the lambda function
+   // this can be avoided by capturing by reference
    int c = 30;
    auto func1 = [c](){
     cout << "Inner value : " << c << endl;
    };
 
-   for (int i=0;i<10;++i){
-    func1();
+   for (int i=0;i<3;++i){
     cout << "Outer value : " << c++ << endl; 
    }
+   func1();
 
 
 }
