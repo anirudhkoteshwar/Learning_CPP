@@ -17,6 +17,9 @@ int main(){
     cout << maximum(a,b) << endl;
     cout << maximum(c,d) << endl;
     cout << maximum(e,f) << endl;
+
+    //you can explicitly say which type you want the template to use. if you enter convertible types, you also get convertible types
+    cout << maximum<double>(a,d) << endl;
 }
 
 // T is the placeholder for the type
