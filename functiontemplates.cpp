@@ -3,6 +3,7 @@
 using namespace std;
 
 template <typename T> T maximum(T a, T b);
+template <typename T> const T& minimum( const T& a, const T& b);
 
 int main(){
     //useful for setting up the same function for different datatypes.
@@ -24,5 +25,10 @@ int main(){
 
 // T is the placeholder for the type
 template <typename T> T maximum(T a, T b){
+    return (a>b) ? a:b;
+}
+
+// work by reference (use the external variable not a copy)
+template <typename T> const T& minimum( const T& a, const T& b){
     return (a>b) ? a:b;
 }
