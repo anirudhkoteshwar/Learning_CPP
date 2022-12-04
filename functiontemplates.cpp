@@ -11,6 +11,7 @@ int main(){
     int b {20};
     double c {22.3};
     double d {302.34};
+    //we are using strings but we need to make sure the operations performed in the template are valid for strings
     string e {"Hello"};
     string f {"World"};
     cout << maximum(a,b) << endl;
