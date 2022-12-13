@@ -31,6 +31,9 @@ int main(){
 
     //insert elements at some index
     v1.insert(v1.begin()+1,5); //this happens because v1.begin() is a pointer. just add the index to v1.begin() to insert at that position
+
+    //remove element at some index
+    v1.erase(v1.begin()); //takes pointer as input
     
 
 
