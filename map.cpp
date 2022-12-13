@@ -33,6 +33,10 @@ int main() {
     //iterating through a map
     for (map<char,int>::iterator i = m1.begin(); i != m1.end(); ++i){ //m1.begin() points the iterator to the first item and ++i moves the iterator to the next item. you could use auto instead just for shorter code.
     cout << (*i).first << " " << (*i).second << '\n'; //dereference the iterator and get the first or second values. 
+
+    //another way to write this
+    cout << i->first  << " " << i->second << endl; //dereference the poiter and access an attribute associated with it.
+    //i is a pointer to a pair and we can dereference and access the first and second methods.
     }
 
 }
