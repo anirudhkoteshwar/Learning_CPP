@@ -3,6 +3,8 @@
 using namespace std;
 
 int main(){
+    //tuples are arrays with can store different datatypes at once, but these have to be mentioned during initialization
+
     tuple<int, string> person(20, "Tim");
     cout << get<1>(person) << endl; //access elements through get<index>(tuple name)
     get<1>(person) = "Banana"; //set elements through get<index>(tuple name)
