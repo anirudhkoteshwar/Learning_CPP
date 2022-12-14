@@ -28,6 +28,13 @@ class Book {
             pages = aPages;
             cout << title << " " << author << " " << pages << endl;
         }
+
+        bool isLight() {
+            if(pages > 250){
+                return false;
+            }
+            return true;
+        }   
 };
 
 int main(){
@@ -38,5 +45,5 @@ int main(){
 
     Book b1;
     Book b2("Wings of Fire","Kalam",300);
-
+    cout << b2.isLight() << endl;
 }
