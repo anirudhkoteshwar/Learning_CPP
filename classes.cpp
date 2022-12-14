@@ -13,6 +13,9 @@ class Book {
     //constructor
     //basically an __init__ function
     //one class can have multiple constructors, which will execute depending upon the arguments provided
+    private:
+        int rating;
+
     public:    
         string title;
         string author;
@@ -22,10 +25,11 @@ class Book {
             cout << "No title provided" << '\n' << "No author provided" << '\n' << "No pages provided" << endl;
         }
 
-        Book(string aTitle,string aAuthor,int aPages){
+        Book(string aTitle,string aAuthor,int aPages,int aRating){
             title = aTitle;
             author = aAuthor;
             pages = aPages;
+            setRating(aRating);
             cout << title << " " << author << " " << pages << endl;
         }
 
@@ -35,6 +39,16 @@ class Book {
             }
             return true;
         }   
+
+        void setRating(int a){
+            if(a==13 || a==19 || a==3){
+                rating = a;
+            }
+            else{
+                rating = 0;
+            }
+        }
+
 };
 
 int main(){
@@ -44,6 +58,7 @@ int main(){
     p1.nationality = "American";
 
     Book b1;
-    Book b2("Wings of Fire","Kalam",300);
+    Book b2("Wings of Fire","Kalam",300,12);
     cout << b2.isLight() << endl;
+    
 }
